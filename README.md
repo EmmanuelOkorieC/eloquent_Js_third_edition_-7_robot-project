@@ -348,7 +348,7 @@ Moved to Town Hall
 Done in 12 turns
 ```
 ## Exercises
-* Measuring a Robot
+* [Measuring a Robot](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition_-7_robot-project/blob/main/measuringRobot.js)
 
 For this exercise, i was tasked to write a function `compareRobots` that takes two robots (and their starting memory) and calculates the **average** number of steps it takes both robot to complete 100 similar tasks
 
@@ -381,7 +381,7 @@ function compareRobots(robot1, memory1, robot2, memory2) {
 }
 ```
 The `for` loop iterates a hundred times and for each iteration, the modified `runRobot` function gets called twice (for both robots) taking the same "VillageState" object (to deliver all it's parcels as it's task). The result of the first call gets added and reassigned to `turn1`, the second to `turn2`. After iterating, `turn1` and `turn2` will hold the total number of turns for 100 tasks completed by both robots. This is then used to calculate the average.
-* Robot Efficiency
+* [Robot Efficiency](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition_-7_robot-project/blob/main/robotEfficiency.js)
 
 The `goalOrientedRobot` function  is not the most optimal. For this exercise, i was tasked to point out the stupid things it does and write another robot function that improves them and finishes faster
 
@@ -412,7 +412,7 @@ function emmasRobot({place, parcels}, memory) {
 
 For every time the memory list is empty, the Robot goes through the process again. This improvement saw my robot finish in an average of **13 turns** which betters the `goalOrientedRobot`'s 16
 
-* Persistent Data
+* [Persistent Data](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition_-7_robot-project/blob/main/persistentGroup.js)
 
 Data structures that do not change are called *immutable* or *persistent*. They behave a lot like strings and numbers in that they are who they say they are and stay that way. 
 
