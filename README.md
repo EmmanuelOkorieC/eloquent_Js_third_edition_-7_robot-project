@@ -1,10 +1,10 @@
 # Eloquent Javascript, 3rd Edition: A modern Introduction to programming
-An overview, with solutions and explanation of exercises in chapter seven of the ebook Eloquent Javascript, 3rd Edition by Marijn Haverbeke
+An overview of the mail delivery robot project in chapter seven of the ebook [Eloquent Javascript, 3rd Edition](https://eloquentjavascript.net/Eloquent_JavaScript.pdf) by Marijn Haverbeke with solution to exercises 
 
 ## Overview
 ### Chapter Seven: Project: A Robot
 
-In this chapter, we worked on a little Project, a mail delivery Robot. This robot picks up a package from a location and delivers it to a specified address. 
+In this chapter, we worked on a little Project, [a mail delivery Robot](https://eloquentjavascript.net/code/chapter/07_robot.js). This robot picks up a package from a location and delivers it to a specified address. 
 
 To get this robot working, we first define a small village where it can move through to accomplish our goal. This village is **Meadowfield** and it isn't very big. It has 11 places with 14 roads between them. we represent this village as an array of roads.
 
