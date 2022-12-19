@@ -306,13 +306,13 @@ Exploring the same route like in the "second search" where we go over  "Cabin" a
 * `at` - holds the value of the current place we have to explore
 * `route` - holds an array of places we have explored to get us to `at` along with `at` itself (`route` is always an empty array at first)
 
-We write a `for` loop that iterates the length of the work array (*note- length is 1 at first but if we don't find place B, we add more objects to be explored before the next iteration*) and for each iteration, we destructure  the object at our current index to get access to its `at` and `route` value and then write another `for` loop to iterate through all the possible places we can get to from it's `at` value (we assign this to a binding `place`  for every iteration).
+We write a `for` loop that iterates the length of the work array (*note- length is 1 at first but if we don't find place B, we add more objects to be explored before the next iteration*) and for each iteration, we destructure  the object at our current index to get access to its `at` and `route` value and then write another `for` loop to iterate through all the possible places we can get to from it's `at` value (we assign this a binding `place`  for every iteration).
 
-For each iteration of this second loop, we check if `place` is the same as `to` (place B) and if it is, we return a new array that combines `route`  and `to`(place B) using the array method `concat` and subsequently, break out of the loop. Else we check if we have not explored  `place` before using the `some` method.
+For each iteration of this second loop, we check if `place` is the same as `to` (place B) and if it is, we return a new array that combines `route`  and `to`(place B) using the array method `concat` and subsequently, break out of the loop. Else we check if we have added `place` to the `work` list already to be explored using the `some` method.
 
-If we have, it progresses to the next iteration. If we have not, it adds a new object to `work` so it can be explored. This object's `at` property will be `place` and the `route` property will be a new array combining `route` and  `place`. 
+If we have, it progresses to the next iteration. If we have not, it adds a new object to `work` so it can be explored. This object's `at` property will be `place` and the `route` property will be a new array combining the current `route` array and  `place`. 
 
-So for example, if we have 3 possible places we can get to from `at` and we have not explored them before, our second loop will add 3 new objects to `work` and then progress to explore them. Our code does not handle a situation where there is no more work items on the work list because we know that our graph is *connected* meaning that every location can be reached from all other locations and our search can't fail.
+Our code does not handle a situation where there is no more work items on the work list because we know that our graph is *connected* meaning that every location can be reached from all other locations and our search can't fail.
 
 The `goalOrientedRobot` function represents an upgrade on the `routeRobot` function and implements our route-finding function to move towards parcels or deliver them
 ```javascript
